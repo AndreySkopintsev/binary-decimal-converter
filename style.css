@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Notable', sans-serif;
+    font-size: 15px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 90vh;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    margin: 100px 0 70px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.container * {
+    width: 90%;
+    margin-top: 10px;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+.warning {
+    position: absolute;
+    bottom: 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin: 0;
+    transition: transform 0.5s ease-in-out;
+    transform: translateY(100%);
+}
+
+.warning.active {
+    
+    transform: translateY(-100%);
+
+}
+
+button:last-of-type {
+    margin-bottom: 15px;
+}
+
+hr{
+    border: 1px solid black;
+    border-style: dotted;
+}

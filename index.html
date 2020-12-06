@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary/decimal converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <hr>
+    <h1>Binary-to-decimal converter</h1>
+    <div class="container">
+        <label for="input-type">Input type:</label>
+        <button id="switch">binary</button>
+        <label for="number">Number input:</label>
+        <input type="text" id="num-input" placeholder="Please enter a binary number...">
+        <label for="output">Number output:</label>
+        <input readonly="readonly" type="text" id="num-output">
+        <button id="convert">Convert</button>
+    </div>
+    
+    <div class="warning" id="warning">
+        <p>The input field is empty, please type in some input.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
